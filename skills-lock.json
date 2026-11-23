@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "skills": {
+    "solohost-package": {
+      "source": "pi-node/solohost",
+      "commit": "e5bb52ed03f18582d5f342e0b6f74d9a9792be27",
+      "sourceType": "github",
+      "skillPath": "skills/solohost-package/SKILL.md",
+      "computedHash": "05316ef6b4471b97d7a083e7d9ec03b366da8328eb9d027eef6b44164bef6a3c"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+title: InfraPilot AI Configuration
+description: Configure AI runtime, monitoring intervals, and authentication for InfraPilot AI Control Center on SoloHost.
+output_file: .env
+fields:
+  - name: OLLAMA_BASE_URL
+    label: Ollama API Base URL
+    type: text
+    required: true
+    default: "http://host.docker.internal:11434"
+    help: URL for your local or network Ollama AI server.
+  - name: OLLAMA_MODEL
+    label: Ollama AI Model
+    type: text
+    required: true
+    default: "qwen3:4b"
+    help: Pinned model tag in your Ollama library (e.g. qwen3:4b).
+  - name: METRIC_COLLECTION_INTERVAL_SECONDS
+    label: Metric Telemetry Interval
+    type: number
+    required: true
+    default: "5"
+    help: Frequency in seconds for host telemetry sampling.
+  - name: SECRET_KEY
+    label: Application Secret Key
+    type: password
+    preserve_if_blank: true
+    required: true
+    default: "solohost-infrapilot-ai-secure-secret-key-32chars"
+    help: Secret key used to sign internal session tokens.
